@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데이원아카이브 조기수료 이벤트</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333333;
+            line-height: 1.6;
+            word-break: keep-all;
+            padding: 20px 10px;
+        }
+        .event-card {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+        .event-header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #ffffff;
+            padding: 40px 24px;
+            text-align: center;
+        }
+        .event-badge {
+            display: inline-block;
+            background-color: #ff6b6b;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+        .event-title {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+        .event-subtitle {
+            font-size: 15px;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+        .event-body {
+            padding: 32px 24px;
+        }
+        .info-list {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 14px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-item:last-child {
+            border-bottom: none;
+        }
+        .info-label {
+            width: 100px;
+            font-weight: 700;
+            color: #1e3c72;
+            font-size: 15px;
+            flex-shrink: 0;
+        }
+        .info-value {
+            flex-grow: 1;
+            font-size: 15px;
+            color: #444444;
+        }
+        .highlight {
+            color: #e63946;
+            font-weight: 700;
+        }
+        .guide-box {
+            background-color: #f8fafc;
+            border: 1px dashed #cbd5e1;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        .guide-title {
+            font-size: 14px;
+            color: #64748b;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .guide-text {
+            font-size: 15px;
+            font-weight: 700;
+            color: #0f172a;
+        }
+        .guide-text span {
+            color: #2563eb;
+        }
+        .cta-btn {
+            display: block;
+            width: 100%;
+            background-color: #2563eb;
+            color: #ffffff;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 16px 0;
+            border-radius: 10px;
+            transition: background-color 0.2s ease;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+        }
+        .cta-btn:hover {
+            background-color: #1d4ed8;
+        }
+        .notice-box {
+            background-color: #f1f5f9;
+            padding: 20px 24px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 13px;
+            color: #64748b;
+        }
+        .notice-title {
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: #475569;
+        }
+        .notice-list {
+            padding-left: 18px;
+            margin: 0;
+        }
+        .notice-list li {
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="event-card">
+        <!-- 메인 헤더 -->
+        <div class="event-header">
+            <span class="event-badge">LIMITED EVENT</span>
+            <h1 class="event-title">데이원아카이브<br>조기수료 이벤트</h1>
+            <p class="event-subtitle">누구보다 빠르게 수료하고 얼리러너의 기회를 잡아보세요!</p>
+        </div>
+
+        <!-- 상세 내용 -->
+        <div class="event-body">
+            <ul class="info-list">
+                <li class="info-item">
+                    <span class="info-label">이벤트 기간</span>
+                    <span class="info-value">8/31 ~ 상품 소진 시 종료</span>
+                </li>
+                <li class="info-item">
+                    <span class="info-label">선정 기준</span>
+                    <span class="info-value">아카이브 수료자(15시간 이상 수강) <span class="highlight">선착순 150명</span></span>
+                </li>
+                <li class="info-item">
+                    <span class="info-label">이벤트 상품</span>
+                    <span class="info-value">15,000원 식/음료 기프티콘 (선택 가능)</span>
+                </li>
+                <li class="info-item">
+                    <span class="info-label">응모 방법</span>
+                    <span class="info-value">기간 내 수료기준 충족 시 <strong>자동 응모</strong></span>
+                </li>
+            </ul>
+
+            <!-- 수강시간 확인 안내 (기존 계정 정보 대체) -->
+            <div class="guide-box">
+                <div class="guide-title">💡 수강시간 확인 팁</div>
+                <div class="guide-text">수강시간은 <span>'내 강의실 > 전체수강률'</span>에서 확인 가능합니다.</div>
+            </div>
+
+            <!-- 수강 바로가기 버튼 -->
+            <a href="https://archive.day1companyedu.co.kr/" target="_blank" class="cta-btn">지금 바로 학습하기 ▶</a>
+        </div>
+
+        <!-- 유의사항 -->
+        <div class="notice-box">
+            <div class="notice-title">※ 꼭 확인해 주세요!</div>
+            <ul class="notice-list">
+                <li>이벤트 진행 전 수료자도 지급 대상에 포함됩니다.</li>
+                <li>대상자에게는 추후 별도 안내 문자가 발송될 예정입니다.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
